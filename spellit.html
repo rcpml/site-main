@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SPELL IT!</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Fredoka+One|Lato|Monoton|Nunito:400,900,900i|Open+Sans|Raleway:400,500,600|Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="https://kit.fontawesome.com/a89b1a5661.js"></script>
+
+
+
+</head>
+
+<body>
+
+  <div class="container">
+      
+    <audio id="audio">
+          <source src="./assets/notification.mp3" type="audio/mp3" />
+          <source src="./assets/notification.ogg" type="audio/ogg" />
+          <source src="./assets/notification.m4r" type="audio/m4r" />
+          Your browser does not support the audio element.
+        </audio>
+
+    <nav class="navigation">
+      <ul>
+        <li class="logo"><a href="index.html">R</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li> <a href="blog.html">Blog</a></li>
+        <li> <a href="contact.html">Contact</a></li>
+        <li class="linkedin"><a href="https://www.linkedin.com/in/recepemul/" target="_blank" rel="noopener"><i
+              class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+    </nav>
+
+    <main class="main">
+
+      <div class="spellit-container">
+
+        <div class="info"> 
+          <div id="userScore">0 PTS</div>
+          <div class="info"><a id="twitter" href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Learn how to spell with Spell It!" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+        </div>
+
+        <div class="headers"> SPELL IT!</div>
+
+        <div class="displayer"  id="wordHolder">Click the button below!</div>
+
+        <div class="user-input"> <input class="form-control" id="userInput" name="input" placeholder="Type here once the game begins!"
+            autocorrect="off" spellcheck="false" autocapitalize="none" autocomplete="off" onkeyup="checkInputWord()" disabled=true /></div>
+
+        <div class="buttons"> <button type="button" class="btn btn-info" id="start-button" onclick="getMyWord(); resetGame();">
+            <strong>Click to get started!</strong>
+          </button></div>
+
+      </div>
+
+
+    </main>
+
+    <div id="snackbar">Correct!</div>
+
+  </div>
+
+<script src="./js/spellIt.js"></script>
+<!-- <script src="./js/syllableTest.js"></script> -->
+</body>
+
+</html>

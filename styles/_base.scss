@@ -1,0 +1,22 @@
+// RESETS VARIABLES MIXINS AND UTILITY CLASSES
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* We select pseudo elements here because "*" only affects real elements.  */
+*,
+*::after,
+*::before {
+  /* Make box-sizing inheritable by all elements and make it border-box to be inherited by all elements in the body */
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}

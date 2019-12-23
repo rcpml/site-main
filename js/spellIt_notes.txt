@@ -1,0 +1,66 @@
+
+	create a function to highlight the correctly typed letter
+
+	three levels: 
+		Level 1 = syllable split and correct letter highlight is on
+		
+		Level 2 = syllable split is on
+
+		Level 3 = both are off
+
+	create a function that applies Fisher-Yates shuffle before starting the game
+
+
+	create a function for point calculations
+		
+		2 syllable word = x2 pts each
+
+		3 syllable word = x3 pts each
+
+		4 syllable word = x4 pts each
+
+		&
+
+		Level 1 = x1 pts
+
+		Level 2 = x2 pts
+
+		Level 3 = x3 pts
+
+
+	use embed / function to share the user's score on fb / twitter to challenge others
+
+
+	create full scale layout to start the game
+
+
+	<!-- ADVANCED -->
+
+	show the target word for a while and hide it
+	
+	the user displays the target word and checks his answer by 'Enter' or the button to check
+	
+	before the target is hidden, it startes to flash and the flashing gets faster until it fades away
+	
+	the time counter is displayed per word
+	
+	each time for each word is displayed at  the end of the game along with the total time and the average time for one word.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
