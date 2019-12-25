@@ -23,6 +23,10 @@
       list-style: none;
       padding-left: 1rem;
 
+      @include respond(phone) {
+        padding-left: .1rem;
+      }
+
       &:hover {
         color: $red-primary;
         cursor: pointer;
@@ -50,6 +54,11 @@
           font-size: 2.5rem;
           padding-right: 1rem;
           padding-top: 1.9rem;
+
+          @include respond(phone) {
+            padding-right: .1rem;
+          }
+
         }
       }
     }

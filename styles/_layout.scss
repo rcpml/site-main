@@ -19,21 +19,24 @@
   grid-template-columns: 50vw 50vw;
   grid-template-rows: 50% 50%;
   border-top: $black-primary dashed .1rem;
-}
 
-
-//MEDIA QUERIES
-@media (max-width: 600px) {
-  .main {
+  @include respond(phone) {
     border-top: $black-primary dashed .1rem;
     display: flex;
     flex-direction: column;
     flex-grow: 2;
     font-size: 10rem;
     height: 91vh;
+  }
 
-    div {
+  div {
+
+    @include respond(phone) {
       height: 25%;
     }
+
   }
+
 }
+
+

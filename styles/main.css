@@ -39,6 +39,12 @@ body {
   width: 100%;
 }
 
+@media (max-width: 600px) {
+  .section {
+    font-size: 4rem;
+  }
+}
+
 .section a,
 .section a:link,
 .section a:hover,
@@ -137,6 +143,9 @@ body {
     font-size: 10rem;
     height: 91vh;
   }
+}
+
+@media (max-width: 600px) {
   .main div {
     height: 25%;
   }
@@ -175,6 +184,12 @@ body {
   padding-left: 1rem;
 }
 
+@media (max-width: 600px) {
+  .navigation ul li {
+    padding-left: .1rem;
+  }
+}
+
 .navigation ul li:hover {
   color: #FF6961;
   cursor: pointer;
@@ -206,5 +221,11 @@ body {
   font-size: 2.5rem;
   padding-right: 1rem;
   padding-top: 1.9rem;
+}
+
+@media (max-width: 600px) {
+  .navigation ul li a i {
+    padding-right: .1rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
