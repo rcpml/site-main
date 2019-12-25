@@ -1,4 +1,4 @@
-//Media query manager mixin
+//Media query mixin
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
     @media (max-width: 600px) { @content };

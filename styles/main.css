@@ -30,7 +30,8 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  font: 5rem Raleway, sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-size: 5rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -48,6 +49,8 @@ body {
 
 .section_1 {
   background-color: #02b8d8;
+  background-image: -webkit-gradient(linear, left top, right top, from(#02b8d8), to(#0085A8));
+  background-image: linear-gradient(to right, #02b8d8, #0085A8);
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
@@ -57,6 +60,8 @@ body {
 
 .section_2 {
   background-color: #4ce64c;
+  background-image: -webkit-gradient(linear, left top, right top, from(#4ce64c), to(#43AB49));
+  background-image: linear-gradient(to right, #4ce64c, #43AB49);
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -65,6 +70,8 @@ body {
 
 .section_3 {
   background-color: #ff6337;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff6337), to(#df4d19));
+  background-image: linear-gradient(to right, #ff6337, #df4d19);
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
@@ -74,6 +81,8 @@ body {
 
 .section_4 {
   background-color: #fbff00;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fbff00), to(#F5BB00));
+  background-image: linear-gradient(to right, #fbff00, #F5BB00);
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   -ms-grid-column: 2;
@@ -98,17 +107,18 @@ body {
 }
 
 .main {
-  border-top: #121212 dashed 0.1rem;
-  display: -ms-grid;
-  display: grid;
-  grid-template: 50vw 50vw;
-  -ms-grid-rows: 50% 50%;
-      grid-template-rows: 50% 50%;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: main;
   height: 91vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50vw 50vw;
+      grid-template-columns: 50vw 50vw;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+  border-top: #121212 dashed 0.1rem;
 }
 
 @media (max-width: 600px) {
@@ -125,7 +135,7 @@ body {
         -ms-flex-positive: 2;
             flex-grow: 2;
     font-size: 10rem;
-    height: 85vh;
+    height: 91vh;
   }
   .main div {
     height: 25%;
@@ -145,7 +155,7 @@ body {
           flex-flow: row wrap;
   justify-items: left;
   width: 100%;
-  font: 1.7rem Raleway, sans-serif;
+  font: 2rem Raleway, sans-serif;
 }
 
 .navigation ul {
@@ -196,252 +206,5 @@ body {
   font-size: 2.5rem;
   padding-right: 1rem;
   padding-top: 1.9rem;
-}
-
-.spellit-container {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: 'info' 'headers' 'displayer' 'inputs' 'buttons';
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-}
-
-.spellit-container div {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: "Lato", sans-serif;
-  font-size: 2rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.spellit-container .info {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #F5BB00;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: info;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding: 1rem 2rem .5rem 2rem;
-}
-
-@media (max-width: 600px) {
-  .spellit-container .info {
-    padding: 1rem 3rem .5rem 2rem;
-  }
-}
-
-.spellit-container .headers {
-  font-family: "Raleway", sans-serif;
-  font-size: 4rem;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: headers;
-  padding-bottom: 2.5rem;
-}
-
-.spellit-container .displayer {
-  background-color: #02b8d8;
-  border-radius: 10px;
-  color: white;
-  font-family: 'Fredoka One', cursive;
-  font-size: 8rem;
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: displayer;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  padding: 3rem 0;
-  text-overflow: clip;
-  text-shadow: 3px 3px 0 #0199d9, 4px 4px 0 #0199d9, 5px 5px 0 #0199d9, 6px 6px 0 #0199d9, 7px 7px 0 #0199d9, 8px 8px 0 #0199d9, 9px 9px 0 #0199d9, 10px 10px 0 #0199d9, 11px 11px 0 #0199d9, 12px 12px 0 #0199d9, 13px 13px 0 #0199d9, 14px 14px 0 #0199d9, 15px 15px 0 #0199d9, 16px 16px 0 #0199d9, 17px 17px 0 #0199d9, 18px 18px 0 #0199d9, 19px 19px 0 #0199d9, 20px 20px 0 #0199d9;
-  text-align: center;
-  width: 80vw;
-}
-
-.spellit-container .displayer :hover {
-  cursor: default;
-}
-
-@media (max-width: 600px) {
-  .spellit-container .displayer {
-    font-size: 3rem;
-  }
-}
-
-.spellit-container .user-input {
-  font-size: 5rem;
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: inputs;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  padding: 3.5rem 0;
-}
-
-.spellit-container .user-input #userInput {
-  border: .3rem solid;
-  border-radius: 5px;
-  border-color: gainsboro;
-  color: #534e50;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  font-size: 4rem;
-  padding: .8rem 0;
-  text-align: center;
-  width: 70vw;
-}
-
-.spellit-container .user-input #userInput:focus {
-  border-color: #F5BB00;
-  outline: none;
-}
-
-.spellit-container .buttons {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  grid-area: buttons;
-}
-
-.spellit-container .buttons button {
-  background: #FF6961;
-  border: none;
-  border-radius: 10px;
-  color: white;
-  font-family: 'Nunito', sans-serif;
-  font-size: 2rem;
-  padding: .8rem 3rem;
-  width: 55vw;
-}
-
-.spellit-container .buttons button:active {
-  background-color: #F5BB00;
-  outline: none;
-}
-
-.spellit-container .buttons button:focus {
-  outline: none;
-}
-
-.spellit-container .buttons-gray {
-  opacity: .2;
-}
-
-/* The snackbar - position it at the bottom and in the middle of the screen */
-#snackbar {
-  visibility: hidden;
-  /* Hidden by default. Visible on click */
-  min-width: 175px;
-  /* Set a default minimum width */
-  margin-left: -87.5px;
-  /* Divide value of min-width by 2 */
-  background-color: #02b8d8;
-  /* Blue background color */
-  color: white;
-  /* White text color */
-  font-weight: 500;
-  font-size: 2.2rem;
-  font-family: "Open Sans", sans-serif;
-  text-align: center;
-  /* Centered text */
-  border-radius: 5px;
-  /* Rounded borders */
-  padding: 10px;
-  /* Padding */
-  position: fixed;
-  /* Sit on top of the screen */
-  z-index: 1;
-  /* Add a z-index if needed */
-  left: 50%;
-  /* Center the snackbar */
-  bottom: 30px;
-  /* 30px from the bottom */
-}
-
-/* Show the snackbar when clicking on a button (class added with JavaScript) */
-#snackbar.show {
-  visibility: visible;
-  /* Show the snackbar */
-  /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
-    However, delay the fade out process for 2.5 seconds */
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 1s;
-  animation: fadein 0.5s, fadeout 0.5s 1s;
-}
-
-/* Animations to fade the snackbar in and out */
-@-webkit-keyframes fadein {
-  from {
-    bottom: 0;
-    opacity: 0;
-  }
-  to {
-    bottom: 30px;
-    opacity: 1;
-  }
-}
-
-@keyframes fadein {
-  from {
-    bottom: 0;
-    opacity: 0;
-  }
-  to {
-    bottom: 30px;
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeout {
-  from {
-    bottom: 30px;
-    opacity: 1;
-  }
-  to {
-    bottom: 0;
-    opacity: 0;
-  }
-}
-
-@keyframes fadeout {
-  from {
-    bottom: 30px;
-    opacity: 1;
-  }
-  to {
-    bottom: 0;
-    opacity: 0;
-  }
-}
-
-.timer-container {
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: 'Lato', sans-serif;
-  font-size: 3rem;
-}
-
-.background-green {
-  background-color: #c0ffb3;
-}
-
-.background-red {
-  background-color: #FF6961;
 }
 /*# sourceMappingURL=main.css.map */
