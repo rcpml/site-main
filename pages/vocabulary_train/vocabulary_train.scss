@@ -4,140 +4,147 @@
 @import '../../styles/navigation';
 
 .container {
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      'navigation navigation'
-      'main main'
-  }
-  
-  .navigation {
-    grid-area: navigation;
-    min-height: 6vh;
-  }
-  
-  .voc__main {
-    grid-area: main;
-    height: 94vh;
-    display: grid;
-    grid-template-columns: 12vw 88vw;
-    border-top: $black-primary dashed .1rem;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    'navigation navigation'
+    'main main'
+}
 
-    font-family: 'Nunito', sans-serif;
-    font-size: 2rem;
+.navigation {
+  grid-area: navigation;
+  min-height: 6vh;
+}
 
+.voc__main {
+  grid-area: main;
+  height: 94vh;
+  display: grid;
+  grid-template-columns: 100vw;
+  border-top: $black-primary dashed .1rem;
+
+  font-family: 'Nunito', sans-serif;
+  font-size: 2rem;
+
+
+  &__stage {
+    width: 100%;
+    background-color: #F5F749;
+
+    display: grid;
+    grid-template-rows: 6% 10% 28% 28% 28%;
+    grid-template-columns: 1fr;
+
+    font-size: 4rem;
+
+    @include respond(phone) {
+      font-size: 2rem;
+    }
 
     &__sidebar {
-        min-width: 100%;
-        min-height: 100%;
-        background-color: $red-primary;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: $red-primary;
+      font-size: 2rem;
 
-        display: flex;
-        justify-content: center;
-
-        line-height: 4.5rem;
-
-        &__categories {
-            list-style: none;
-
-            & > li:hover {
-
-                transition: all .5s;
-                color: $white-primary;
-                cursor: pointer;
-            }
-
-            & > li:first-child {
-                padding-top: 2rem;
-            }
+      @include respond(phone) {
+        font-size: 1rem;
+      }
 
 
+      &__categories {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      
+      &>span:not(:first-child) {
+          padding-left: 3rem;
         }
-
+        &>span:hover {
+          transition: all .5s;
+          color: $white-primary;
+          cursor: pointer;
+        }
+      }
     }
 
-    &__stage {
-        width: 100%;
-        height: 100%;
-        background-color: #F5F749;
-
-        display: grid;
-        grid-template-rows: 10% 30% 30% 30%;
-        grid-template-columns: 1fr;
-
-        align-items: center;
-        font-size: 4rem;
+    #itemNumbers {
+      background-color: $green-primary;
+      width: 100%;
+      height: 100%;
+      @include flexcenter;
+      justify-content: space-evenly;
 
 
-        #itemNumbers {
-          background-color: $green-primary;
-          width: 100%;
-          height: 100%;
-          @include flexcenter;
+      &>#numbersArea>span:not(:first-child) {
+        margin-left: 4rem;
 
-          
+        @include respond(phone) {
+          margin-left: 1rem;
+        }
+      }
 
-          & > #numbersArea > span:not(:first-child) {
+      #numbersArea {
+        span {
+          cursor: pointer;
 
-            margin-left: 4rem;
-          
-          }
+          &:hover {
+            transition: all .3s;
+            color: $white-primary;
+            font-size: 6rem;
 
-          #numbersArea {
-
-            line-height: 6rem;
-
-            span {
-
-              cursor: pointer;
-
-              &:hover{
-
-                transition: all .3s;
-                color: $white-primary;
-                font-size: 6rem;
-
-              }
-
-              &:not(:hover) {
-                transition: all .5s;
-
-              }
+            @include respond(phone) {
+              font-size: 3rem;
             }
+
           }
 
+          &:not(:hover) {
+            transition: all .5s;
+          }
         }
+      }
+    }
 
-        #itemWord {
-          background-color: $yellow-primary;
-          width: 100%;
-          height: 100%;
-          padding: 0% 3rem;
-          text-align: center;
-          @include flexcenter;
-          font-weight: 900;
-          font-size: 6rem;
-        }
+    #itemWord {
+      background-color: $yellow-primary;
+      width: 100%;
+      height: 100%;
+      padding: 0% 3rem;
+      text-align: center;
+      @include flexcenter;
+      font-weight: 900;
+      font-size: 6rem;
+      
+      @include respond(phone) {
+        font-size: 4rem;
+      }
+    }
 
-        #itemDefinition {
-          background-color: #38e079;
-          width: 100%;
-          height: 100%;
-          padding: 0% 3rem;          
-          text-align: center;
-          @include flexcenter;
-          font-family: 'Open Sans', sans-serif;
-        }
+    #itemDefinition {
+      background-color: #38e079;
+      width: 100%;
+      height: 100%;
+      padding: 0% 3rem;
+      text-align: center;
+      @include flexcenter;
+      font-family: 'Open Sans', sans-serif;
+    }
 
-        #itemSample {
-          background-color: $blue-primary;
-          width: 100%;
-          height: 100%;
-          padding: 0% 3rem;
-          text-align: center;
-          @include flexcenter;
-          font-family: 'Montserrat', sans-serif;
-          font-size: 3.5rem;
-        }
+    #itemSample {
+      background-color: $blue-primary;
+      width: 100%;
+      height: 100%;
+      padding: 0% 3rem;
+      text-align: center;
+      @include flexcenter;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3.5rem;
+
+      @include respond(phone) {
+        font-size: 2rem;
+      }
     }
   }
+}

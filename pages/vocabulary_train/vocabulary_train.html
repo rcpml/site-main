@@ -36,7 +36,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./vocabulary_train.css" />
-    <!-- <link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css"> -->
     <script src="https://kit.fontawesome.com/a89b1a5661.js"></script>
   </head>
 
@@ -61,17 +60,17 @@
         </ul>
       </nav>
 
-      <main class="voc__main">
-        <div class="voc__main__sidebar">
-          <ul class="voc__main__sidebar__categories">
-            <li class="voc__main__sidebar__categories__1" id="spaceCategory">SPACE</li>
-            <li class="voc__main__sidebar__categories__2" id="agricultureCategory">AGRICULTURE</li>
-            <li class="voc__main__sidebar__categories__3" id="literatureCategory">LITERATURE</li>
-            <li class="voc__main__sidebar__categories__4" id="psychologyCategory">PSYCHOLOGY</li>
-          </ul>
-        </div>
-
+      <div class="voc__main">
         <div class="voc__main__stage">
+
+          <div class="voc__main__stage__sidebar">
+            <div class="voc__main__stage__sidebar__categories">
+              <span class="voc__main__stage__sidebar__categories__1" id="spaceCategory">SPACE</span>
+              <span class="voc__main__stage__sidebar__categories__2" id="agricultureCategory">AGRICULTURE</span>
+              <span class="voc__main__stage__sidebar__categories__3" id="literatureCategory">LITERATURE</span>
+              <span class="voc__main__stage__sidebar__categories__4" id="psychologyCategory">PSYCHOLOGY</span>
+            </div>
+          </div>
 
           <div id="itemNumbers">
             <p id="numbersArea">
@@ -102,8 +101,8 @@
 
 
         </div>
-      </main>
     </div>
+  </div>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
     <script src="vocabulary_train.js"></script>
   </body>
