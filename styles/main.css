@@ -109,7 +109,7 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: navigation;
-  height: 6vh;
+  min-height: 6vh;
 }
 
 .main {
