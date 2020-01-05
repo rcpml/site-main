@@ -35,20 +35,20 @@
         display: flex;
         justify-content: center;
 
+        line-height: 4.5rem;
+
         &__categories {
             list-style: none;
-            padding-top: 3rem;
 
             & > li:hover {
-                // animation: pulsate 2s;
-                // transform-origin: left;
-                transition: all .3s;
+
+                transition: all .5s;
                 color: $white-primary;
                 cursor: pointer;
             }
 
-            & > li:not(:first-child) {
-                padding-top: 1rem;
+            & > li:first-child {
+                padding-top: 2rem;
             }
 
 
@@ -61,23 +61,80 @@
         height: 100%;
         background-color: #F5F749;
 
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-rows: 10% 30% 30% 30%;
+        grid-template-columns: 1fr;
+
         align-items: center;
+        font-size: 4rem;
+
+
+        #itemNumbers {
+          background-color: $blue-primary;
+          width: 100%;
+          height: 100%;
+          @include flexcenter;
+
+          
+
+          & > #numbersArea > span:not(:first-child) {
+
+            margin-left: 4rem;
+          
+          }
+
+          #numbersArea {
+
+            line-height: 6rem;
+
+            span {
+
+              cursor: pointer;
+
+              &:hover{
+
+                transition: all .3s;
+                color: $white-primary;
+                font-size: 6rem;
+
+              }
+
+              &:not(:hover) {
+                transition: all .5s;
+
+              }
+            }
+          }
+
+        }
+
+        #itemWord {
+          background-color: $yellow-primary;
+          width: 100%;
+          height: 100%;
+          padding: 0% 3rem;
+          @include flexcenter;
+          font-weight: 900;;
+        }
+
+        #itemDefinition {
+          background-color: $green-primary;
+          width: 100%;
+          height: 100%;
+          padding: 0% 3rem;
+          @include flexcenter;
+          font-family: 'Open Sans', sans-serif;
+
+        }
+
+        #itemSample {
+          background-color: $yellow-primary;
+          width: 100%;
+          height: 100%;
+          padding: 0% 3rem;
+          @include flexcenter;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 4rem;
+        }
     }
   }
-  
-// @keyframes pulsate {
-//     0% {
-//         transform: scale(1);
-//     }
-
-//     50% {
-//         transform: scale(2);
-//         margin: 2rem;
-//     }
-
-//     100% {
-//         transform: scale(1);
-//     }
-// }

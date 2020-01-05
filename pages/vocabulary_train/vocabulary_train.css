@@ -166,28 +166,44 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  line-height: 4.5rem;
 }
 
 .voc__main__sidebar__categories {
   list-style: none;
-  padding-top: 3rem;
 }
 
 .voc__main__sidebar__categories > li:hover {
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
   color: #fffeff;
   cursor: pointer;
 }
 
-.voc__main__sidebar__categories > li:not(:first-child) {
-  padding-top: 1rem;
+.voc__main__sidebar__categories > li:first-child {
+  padding-top: 2rem;
 }
 
 .voc__main__stage {
   width: 100%;
   height: 100%;
   background-color: #F5F749;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 10% 30% 30% 30%;
+      grid-template-rows: 10% 30% 30% 30%;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4rem;
+}
+
+.voc__main__stage #itemNumbers {
+  background-color: #02b8d8;
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,5 +213,81 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.voc__main__stage #itemNumbers > #numbersArea > span:not(:first-child) {
+  margin-left: 4rem;
+}
+
+.voc__main__stage #itemNumbers #numbersArea {
+  line-height: 6rem;
+}
+
+.voc__main__stage #itemNumbers #numbersArea span {
+  cursor: pointer;
+}
+
+.voc__main__stage #itemNumbers #numbersArea span:hover {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: #fffeff;
+  font-size: 6rem;
+}
+
+.voc__main__stage #itemNumbers #numbersArea span:not(:hover) {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.voc__main__stage #itemWord {
+  background-color: #fbff00;
+  width: 100%;
+  height: 100%;
+  padding: 0% 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 900;
+}
+
+.voc__main__stage #itemDefinition {
+  background-color: #4ce64c;
+  width: 100%;
+  height: 100%;
+  padding: 0% 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.voc__main__stage #itemSample {
+  background-color: #fbff00;
+  width: 100%;
+  height: 100%;
+  padding: 0% 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
 }
 /*# sourceMappingURL=vocabulary_train.css.map */
