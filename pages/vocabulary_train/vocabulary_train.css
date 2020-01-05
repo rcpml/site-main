@@ -244,6 +244,7 @@ body {
   width: 100%;
   height: 100%;
   padding: 0% 3rem;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -254,6 +255,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 900;
+  font-size: 6rem;
 }
 
 .voc__main__stage #itemDefinition {
@@ -261,6 +263,7 @@ body {
   width: 100%;
   height: 100%;
   padding: 0% 3rem;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,6 +281,7 @@ body {
   width: 100%;
   height: 100%;
   padding: 0% 3rem;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,6 +292,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-family: 'Montserrat', sans-serif;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 /*# sourceMappingURL=vocabulary_train.css.map */
