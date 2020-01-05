@@ -149,8 +149,8 @@ body {
   height: 94vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 15vw 85vw;
-      grid-template-columns: 15vw 85vw;
+  -ms-grid-columns: 12vw 88vw;
+      grid-template-columns: 12vw 88vw;
   border-top: #121212 dashed 0.1rem;
   font-family: 'Nunito', sans-serif;
   font-size: 2rem;
@@ -201,7 +201,7 @@ body {
 }
 
 .voc__main__stage #itemNumbers {
-  background-color: #02b8d8;
+  background-color: #4ce64c;
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -259,7 +259,7 @@ body {
 }
 
 .voc__main__stage #itemDefinition {
-  background-color: #4ce64c;
+  background-color: #38e079;
   width: 100%;
   height: 100%;
   padding: 0% 3rem;
@@ -277,7 +277,7 @@ body {
 }
 
 .voc__main__stage #itemSample {
-  background-color: #fbff00;
+  background-color: #02b8d8;
   width: 100%;
   height: 100%;
   padding: 0% 3rem;

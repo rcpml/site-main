@@ -20,7 +20,7 @@
     grid-area: main;
     height: 94vh;
     display: grid;
-    grid-template-columns: 15vw 85vw;
+    grid-template-columns: 12vw 88vw;
     border-top: $black-primary dashed .1rem;
 
     font-family: 'Nunito', sans-serif;
@@ -70,7 +70,7 @@
 
 
         #itemNumbers {
-          background-color: $blue-primary;
+          background-color: $green-primary;
           width: 100%;
           height: 100%;
           @include flexcenter;
@@ -120,7 +120,7 @@
         }
 
         #itemDefinition {
-          background-color: $green-primary;
+          background-color: #38e079;
           width: 100%;
           height: 100%;
           padding: 0% 3rem;          
@@ -130,7 +130,7 @@
         }
 
         #itemSample {
-          background-color: $yellow-primary;
+          background-color: $blue-primary;
           width: 100%;
           height: 100%;
           padding: 0% 3rem;
