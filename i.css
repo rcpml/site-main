@@ -94,8 +94,16 @@ body {
   font-size: 4.883rem;
 }
 
+@media (max-width: 600px) {
+  .container main .first-content h2 {
+    font-size: 3.662rem;
+  }
+}
+
 .container main .first-content p {
   color: #292929;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 @media (max-width: 600px) {
