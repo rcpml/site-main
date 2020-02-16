@@ -1,0 +1,64 @@
+nav {
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+
+    ul {
+        // background-color: lightcoral;
+        display: flex;
+        justify-content: flex-end;
+        align-self: start;
+        flex-wrap: wrap;
+
+        & > li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+
+            margin-right: auto;
+
+            &__svg {
+                height: 1.9rem;
+            }
+        }
+
+        .projects {
+            // background-color: chartreuse;
+        }
+
+        .blog {
+            // background-color: aqua;
+        }
+
+        .contact {
+            // background-color: coral;
+        }
+
+        li {
+            list-style: none;
+
+            &:not(:last-child) {
+                padding-right: 1rem;
+            }
+
+            &:not(:first-child) {
+                // margin-right: 1rem;
+            } 
+
+            a,
+            a:link,
+            a:visited,
+            a:link:visited {
+                text-decoration: none;
+                color: black;
+
+                &:hover {
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+}
