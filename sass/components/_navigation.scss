@@ -41,6 +41,10 @@ nav {
 
             &:not(:last-child) {
                 padding-right: 1rem;
+
+                @include respond(phone) {
+                    padding-right: .5rem;
+                }
             }
 
             &:not(:first-child) {
