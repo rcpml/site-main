@@ -1,0 +1,32 @@
+.jumbotron {
+    @include flexcenter;
+
+    margin: 2vh 0;
+    padding: 5vh 10vw;
+    width: 100%;
+    height: 30vh;
+    line-height: 1.5;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 4.883rem;
+
+    @include respond(phone) {
+        font-size: 3.662rem;
+      }
+
+    // border: 5px solid yellowgreen;
+
+    @include respond(phone) {
+        padding: 1rem 5vw;
+    }
+
+    &__text {
+        @include flexcenter;
+        padding: 0 3vh;
+        width: 100%;
+        height: 20rem;
+
+        background-color: black;
+        color: white;
+    }
+}
