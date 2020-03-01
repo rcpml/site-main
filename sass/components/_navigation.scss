@@ -9,11 +9,11 @@ nav {
         align-self: start;
         flex-wrap: wrap;
 
-        & > li {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+        // & > li {
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        // }
 
         .logo {
 
@@ -37,6 +37,11 @@ nav {
         }
 
         li {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
             list-style: none;
 
             &:not(:last-child) {
