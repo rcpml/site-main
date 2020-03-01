@@ -3,7 +3,7 @@ nav {
     font-size: 2rem;
 
     @include respond(phone) {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     ul {
@@ -21,7 +21,7 @@ nav {
                 height: 1.9rem;
 
                 @include respond(phone) {
-                    height: 1rem;
+                    height: 1.2rem;
                 }
             }
         }

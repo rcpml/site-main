@@ -1,2 +1,2 @@
 # site-main
-Temp project for developmental purposes
+The website to connect, share & showcase

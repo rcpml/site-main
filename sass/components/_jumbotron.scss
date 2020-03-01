@@ -9,8 +9,8 @@
     font-family: 'Lato', sans-serif;
     font-size: 4.883rem;
 
-    background-color: #5BC0EB;
     background-color: #C5E7E2;
+    border-radius: 1rem;
 
     @include respond(phone) {
         font-size: 3.662rem;
@@ -31,5 +31,7 @@
         background-color: #E55934;
         background-color: #49A078;
         color: white;
+        border-radius: 1rem;
+
     }
 }
