@@ -74,6 +74,12 @@ nav {
   font-size: 2rem;
 }
 
+@media (max-width: 600px) {
+  nav {
+    font-size: 1rem;
+  }
+}
+
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,6 +99,12 @@ nav ul .logo {
 
 nav ul .logo__svg {
   height: 1.9rem;
+}
+
+@media (max-width: 600px) {
+  nav ul .logo__svg {
+    height: 1rem;
+  }
 }
 
 nav ul li {
