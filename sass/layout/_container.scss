@@ -7,6 +7,9 @@
         line-height: 1.5;
         font-family: 'Open-Sans', sans-serif;
 
+        display: grid;
+        grid-template-columns: repeat(auto-fit, min-max(300px, 1fr));
+
         @include respond(phone) {
             padding: 1rem 5vw;
         }

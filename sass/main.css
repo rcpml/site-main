@@ -156,6 +156,10 @@ nav ul li a:link:visited:hover {
   font-size: 2rem;
   line-height: 1.5;
   font-family: 'Open-Sans', sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (min-max(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, min-max(300px, 1fr));
 }
 
 @media (max-width: 600px) {
