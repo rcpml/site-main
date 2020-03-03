@@ -26,24 +26,11 @@ nav {
             }
         }
 
-        .projects {
-            // background-color: chartreuse;
-        }
-
-        .blog {
-            // background-color: aqua;
-        }
-
-        .contact {
-            // background-color: coral;
-        }
-
         li {
-
             display: flex;
             justify-content: center;
             align-items: center;
-            
+
             list-style: none;
 
             &:not(:last-child) {
@@ -53,10 +40,6 @@ nav {
                     padding-right: .5rem;
                 }
             }
-
-            &:not(:first-child) {
-                // margin-right: 1rem;
-            } 
 
             a,
             a:link,
