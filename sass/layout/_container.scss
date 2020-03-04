@@ -2,19 +2,26 @@
     padding: 2rem;
 
     main {
-        padding: 1rem 20vw;
+        padding: 1rem 10vw;
         font-size: 2rem;
         line-height: 1.5;
         font-family: 'Open-Sans', sans-serif;
 
         display: grid;
-        grid-template-columns: repeat(auto-fit, min-max(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 
         @include respond(phone) {
             padding: 1rem 5vw;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         }
 
         .first-content {
+            @include flexcenter;
+            display: flex;
+            // border: 5px solid salmon;
+            margin-bottom: 1vh;
+            flex-direction: column;
+
 
             h2 {
                 font-family: 'Lato', sans-serif;
