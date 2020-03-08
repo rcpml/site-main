@@ -3,7 +3,7 @@
 
     main {
         padding: 1rem 10vw;
-        font-size: 2rem;
+        font-size: 1.8rem;
         line-height: 1.5;
         font-family: 'Open-Sans', sans-serif;
 
@@ -11,16 +11,17 @@
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 
         @include respond(phone) {
-            padding: 1rem 5vw;
+            padding: 1rem 1vw;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         }
 
         .first-content {
             @include flexcenter;
             display: flex;
-            // border: 5px solid salmon;
-            margin-bottom: 1vh;
+            padding: 7rem;
+            margin: 1vh;
             flex-direction: column;
+            box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
 
 
             h2 {
@@ -66,8 +67,8 @@
 
             p {
                 color: #2C2C2C;
-                text-align: justify;
-                text-justify: inter-word;
+                text-align: left;
+                word-wrap: wrap;
 
                 @include respond(phone) {
                     font-size: 1.5rem;

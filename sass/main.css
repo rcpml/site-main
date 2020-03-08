@@ -152,7 +152,7 @@ nav ul li a:link:visited:hover {
 
 .container main {
   padding: 1rem 10vw;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   font-family: 'Open-Sans', sans-serif;
   display: -ms-grid;
@@ -163,7 +163,7 @@ nav ul li a:link:visited:hover {
 
 @media (max-width: 600px) {
   .container main {
-    padding: 1rem 5vw;
+    padding: 1rem 1vw;
     -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
@@ -180,11 +180,14 @@ nav ul li a:link:visited:hover {
       -ms-flex-align: center;
           align-items: center;
   display: flex;
-  margin-bottom: 1vh;
+  padding: 7rem;
+  margin: 1vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .container main .first-content h2 {
@@ -237,8 +240,8 @@ nav ul li a:link:visited:hover {
 
 .container main .first-content p {
   color: #2C2C2C;
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: left;
+  word-wrap: wrap;
 }
 
 @media (max-width: 600px) {
