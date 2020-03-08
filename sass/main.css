@@ -32,7 +32,7 @@ body {
 .button__posts a:active,
 .button__posts a:visited {
   text-decoration: none;
-  color: #121212;
+  color: inherit;
 }
 
 .button__posts:focus {
@@ -200,7 +200,7 @@ nav ul li a:link:visited:hover {
       -ms-flex-align: center;
           align-items: center;
   display: flex;
-  padding: 7rem;
+  padding: 12rem;
   margin: 1vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -208,6 +208,12 @@ nav ul li a:link:visited:hover {
           flex-direction: column;
   -webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+  .container main .first-content {
+    padding: 4rem;
+  }
 }
 
 .container main .first-content h2 {

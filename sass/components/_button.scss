@@ -10,7 +10,7 @@
     a:active,
     a:visited {
         text-decoration: none;
-        color: $black-primary;
+        color: inherit;
     }
 
     &:focus {
