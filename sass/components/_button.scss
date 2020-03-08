@@ -1,0 +1,19 @@
+.button__posts {
+    background-color: $yellow-primary-dark;
+    border-radius: 1rem;
+    font-size: 2rem;
+    width: 18rem;
+    height: 5rem;
+
+    a,
+    a:link,
+    a:active,
+    a:visited {
+        text-decoration: none;
+        color: $black-primary;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

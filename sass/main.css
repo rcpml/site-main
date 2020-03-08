@@ -19,6 +19,26 @@ body {
           box-sizing: border-box;
 }
 
+.button__posts {
+  background-color: #F5BB00;
+  border-radius: 1rem;
+  font-size: 2rem;
+  width: 18rem;
+  height: 5rem;
+}
+
+.button__posts a,
+.button__posts a:link,
+.button__posts a:active,
+.button__posts a:visited {
+  text-decoration: none;
+  color: #121212;
+}
+
+.button__posts:focus {
+  outline: none;
+}
+
 .jumbotron {
   display: -webkit-box;
   display: -ms-flexbox;
