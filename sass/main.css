@@ -293,6 +293,66 @@ nav ul li a:link:visited:hover {
   color: #E3504B;
 }
 
+#tracker-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tracker-input {
+  color: #292929;
+  font-family: 'Poppins', sans-serif;
+}
+
+.tracker-input .input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: #534e50 2px solid;
+  min-width: 50vw;
+  padding: 2rem 0;
+}
+
+.tracker-input .input-container .input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding: 0 2rem;
+}
+
+.tracker-input .input-container .input-group input {
+  margin: 0 1rem;
+}
+
+.tracker-input .input-container .input-group .userinput {
+  margin: 0 1rem;
+}
+
 .tracker-content {
   color: #292929;
   font-family: 'Poppins', sans-serif;
@@ -312,6 +372,12 @@ nav ul li a:link:visited:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border: #534e50 2px solid;
+  min-width: 300px;
+  min-height: 200px;
 }
 /*# sourceMappingURL=main.css.map */

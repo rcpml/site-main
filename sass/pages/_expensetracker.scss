@@ -1,11 +1,52 @@
+#tracker-main {
+    @include flexcenter;
+    flex-direction: column;
+}
+
+.tracker-input {
+    color: $black-primary-text;
+    font-family: 'Poppins', sans-serif;
+
+    .input-container {
+        @include flexcenter;
+        flex-direction: column;
+        border: $black-primary-light 2px solid;
+        min-width: 50vw;
+        padding: 2rem 0;
+
+
+
+        .input-group {
+            display: flex;
+            justify-content: space-around;
+            align-items: baseline;
+            padding: 0 2rem;
+
+            input {
+                // display: block;
+                margin: 0 1rem;
+
+            }
+
+            .userinput {
+                margin: 0 1rem;
+            }
+        }
+
+    }
+}
+
 .tracker-content {
     color: $black-primary-text;
     font-family: 'Poppins', sans-serif;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
     div {
         @include flexcenter;
+        flex-direction: column;
         border: $black-primary-light 2px solid;
+        min-width: 300px;
+        min-height: 200px;
     }
 }

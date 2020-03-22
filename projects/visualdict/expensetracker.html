@@ -42,21 +42,36 @@
         </p>
       </div>
 
-      <main>
+      <main id="tracker-main">
+        <section class="tracker-input">
+          <div class="input-container">
+            <h2>INPUT</h2>
+            <div class="input-group">
+            <input type="number" class="userinput" value="Enter amount" id="input-value-js">
+            <input type="submit" value="Submit" id="submit-value-js">
+            <input type="radio" class="userinput" name="amount" value="Expense" id="expense-js">
+            <label for="Expense" class="userinput">Expense</label>
+            <input type="radio" class="userinput" name="amount" value="Income" id="income-js" checked>
+            <label for="Income" class="userinput">Income</label>
+          </div>
+          </div>
+        </section>
+
         <section class="tracker-content">
-          
           <div class="expenses-container">
             <h2>EXPENSES</h2>
+            <p id="expense-display-js">0$</p>
           </div>
 
-          <div>
+          <div class="income-container">
             <h2>INCOME</h2>
+            <p id="income-display-js">0$</p>
           </div>
 
-          <div>
+          <div class="total-container">
             <h2>TOTAL</h2>
+            <p id="total-display-js">0$</p>
           </div>
-
         </section>
 
       </main>
