@@ -1,0 +1,11 @@
+.tracker-content {
+    color: $black-primary-text;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+
+    div {
+        @include flexcenter;
+        border: $black-primary-light 2px solid;
+    }
+}

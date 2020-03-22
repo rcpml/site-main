@@ -19,24 +19,30 @@ body {
           box-sizing: border-box;
 }
 
+.button {
+  border-radius: 2rem;
+  font-size: 2rem;
+  width: 15rem;
+  height: 4rem;
+  background-color: #C5E7E2;
+}
+
+.button a,
+.button a:link,
+.button a:active,
+.button a:visited {
+  text-decoration: none;
+  color: #404040;
+}
+
+.button:focus {
+  outline: none;
+}
+
 .button__posts {
   background-color: #F5BB00;
-  border-radius: 1rem;
-  font-size: 2rem;
-  width: 18rem;
-  height: 5rem;
-}
-
-.button__posts a,
-.button__posts a:link,
-.button__posts a:active,
-.button__posts a:visited {
-  text-decoration: none;
-  color: inherit;
-}
-
-.button__posts:focus {
-  outline: none;
+  color: #404040;
+  font-size: 1.8rem;
 }
 
 .jumbotron {
@@ -279,5 +285,33 @@ nav ul li a:link:visited:hover {
 
 .container main .first-content p:not(:last-child) {
   padding: 1rem 0;
+}
+
+#email h3 a,
+#email h3 a:link,
+#email h3 a:visited {
+  color: #E3504B;
+}
+
+.tracker-content {
+  color: #292929;
+  font-family: 'Poppins', sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.tracker-content div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: #534e50 2px solid;
 }
 /*# sourceMappingURL=main.css.map */

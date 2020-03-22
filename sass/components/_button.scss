@@ -1,19 +1,26 @@
-.button__posts {
-    background-color: $yellow-primary-dark;
-    border-radius: 1rem;
+.button {
+    border-radius: 2rem;
     font-size: 2rem;
-    width: 18rem;
-    height: 5rem;
+    width: 15rem;
+    height: 4rem;
+
+    background-color: #C5E7E2;
 
     a,
     a:link,
     a:active,
     a:visited {
         text-decoration: none;
-        color: inherit;
+        color: #404040;
     }
 
     &:focus {
         outline: none;
     }
+}
+
+.button__posts {
+    background-color: $yellow-primary-dark;
+    color: #404040;
+    font-size: 1.8rem;
 }
