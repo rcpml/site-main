@@ -128,10 +128,22 @@
         flex-direction: column;
         border: $black-primary-light 2px solid;
         min-width: 300px;
-        min-height: 200px;
+        min-height: 200px; 
+        margin: 1rem;
+
     }
 
-    div {
-        margin: 1rem;
+    .expenses-container {
+        background-color: $red-primary;
+        opacity: .95;
+    }
+
+    .income-container {
+        background-color: $green-primary-dark;
+        opacity: .95;
+    }
+
+    .total-container {
+        background-color: $blue-primary;
     }
 }

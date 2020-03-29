@@ -530,9 +530,20 @@ nav ul li a:link:visited:hover {
   border: #534e50 2px solid;
   min-width: 300px;
   min-height: 200px;
+  margin: 1rem;
 }
 
-.tracker-content div {
-  margin: 1rem;
+.tracker-content .expenses-container {
+  background-color: #FF6961;
+  opacity: .95;
+}
+
+.tracker-content .income-container {
+  background-color: #43AB49;
+  opacity: .95;
+}
+
+.tracker-content .total-container {
+  background-color: #02b8d8;
 }
 /*# sourceMappingURL=main.css.map */

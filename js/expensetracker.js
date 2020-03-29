@@ -5,6 +5,11 @@ let totalIncome = 0;
 let totalAmount = 0;
 
 const userInput = document.getElementById('input-value-js');
+userInput.addEventListener('keyup', (e) => {
+  if(e.keyCode == 13) {
+    submitValue();
+  }
+})
 const expense = document.getElementById('expense-js');
 const income = document.getElementById('income-js');
 
@@ -28,13 +33,18 @@ function updateAmount() {
 }
 
 function updateDisplay() {
-  expenseDisplay.textContent = totalExpense;
-  incomeDisplay.textContent = totalIncome;
-  totalDisplay.textContent = (totalIncome - totalExpense);
+  expenseDisplay.textContent = `${totalExpense}$`;
+  incomeDisplay.textContent = `${totalIncome}$`;
+  totalDisplay.textContent = `${(totalIncome - totalExpense)}$`;
+}
+
+function resetInputValue() {
+  userInput.value = "";
 }
 
 function submitValue() {
   updateAmount();
   updateDisplay();
+  resetInputValue();
   console.log("Submitted");
 }
