@@ -40,6 +40,12 @@
                     padding: .5rem;
                 }
 
+                input:not(:first-child) {
+                    @include respond(phone) {
+                        margin-top: 1rem;
+                    }
+                }
+
                 @include respond(phone) {
                     flex-direction: column;
                     justify-content: center;
@@ -135,12 +141,10 @@
 
     .expenses-container {
         background-color: $red-primary;
-        opacity: .95;
     }
 
     .income-container {
         background-color: $green-primary-dark;
-        opacity: .95;
     }
 
     .total-container {

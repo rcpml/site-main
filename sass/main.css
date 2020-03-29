@@ -382,6 +382,12 @@ nav ul li a:link:visited:hover {
 }
 
 @media (max-width: 600px) {
+  .tracker-input .input-container .input-group .input-value-group input:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
   .tracker-input .input-container .input-group .input-value-group {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -535,12 +541,10 @@ nav ul li a:link:visited:hover {
 
 .tracker-content .expenses-container {
   background-color: #FF6961;
-  opacity: .95;
 }
 
 .tracker-content .income-container {
   background-color: #43AB49;
-  opacity: .95;
 }
 
 .tracker-content .total-container {
