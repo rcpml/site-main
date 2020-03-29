@@ -19,10 +19,10 @@ totalDisplay.textContent = `${totalAmount}$`;
 
 function updateAmount() {
   if (expense.checked) {
-    totalExpense += parseInt(userInput.value);
+    totalExpense += parseInt(userInput.value || 0);
     console.log(`Expense updated: ${expense}`); 
   } else {
-    totalIncome += parseInt(userInput.value);
+    totalIncome += parseInt(userInput.value || 0);
     console.log(`Income updated: ${income}`);
   }
 }

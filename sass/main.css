@@ -314,6 +314,12 @@ nav ul li a:link:visited:hover {
   font-family: 'Poppins', sans-serif;
 }
 
+@media (max-width: 600px) {
+  .tracker-input {
+    margin: 0 4vw;
+  }
+}
+
 .tracker-input .input-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -329,7 +335,7 @@ nav ul li a:link:visited:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   border: #534e50 2px solid;
-  min-width: 50vw;
+  min-width: 30vw;
   padding: 2rem 0;
 }
 
@@ -343,6 +349,134 @@ nav ul li a:link:visited:hover {
       -ms-flex-align: baseline;
           align-items: baseline;
   padding: 0 2rem;
+}
+
+@media (max-width: 600px) {
+  .tracker-input .input-container .input-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.tracker-input .input-container .input-group .input-value-group {
+  margin-right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.tracker-input .input-container .input-group .input-value-group input, .tracker-input .input-container .input-group .input-value-group label {
+  margin: 0;
+  padding: .5rem;
+}
+
+@media (max-width: 600px) {
+  .tracker-input .input-container .input-group .input-value-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 0;
+  }
+}
+
+.tracker-input .input-container .input-group .radio-input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .tracker-input .input-container .input-group .radio-input-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.tracker-input .input-container .input-group .input-expense-group {
+  margin-right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+@media (max-width: 600px) {
+  .tracker-input .input-container .input-group .input-expense-group {
+    margin-right: 0;
+  }
+}
+
+.tracker-input .input-container .input-group .input-expense-group input, .tracker-input .input-container .input-group .input-expense-group label {
+  margin: 0;
+  padding: .5rem;
+}
+
+@media (max-width: 600px) {
+  .tracker-input .input-container .input-group .input-expense-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+}
+
+.tracker-input .input-container .input-group .input-income-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.tracker-input .input-container .input-group .input-income-group input, .tracker-input .input-container .input-group .input-income-group label {
+  margin: 0;
+  padding: .5rem;
+}
+
+@media (max-width: 600px) {
+  .tracker-input .input-container .input-group .input-income-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
 }
 
 .tracker-input .input-container .input-group input {
@@ -396,5 +530,9 @@ nav ul li a:link:visited:hover {
   border: #534e50 2px solid;
   min-width: 300px;
   min-height: 200px;
+}
+
+.tracker-content div {
+  margin: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

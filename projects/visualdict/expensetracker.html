@@ -4,9 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon_io/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon_io/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon_io/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../assets/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../assets/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../assets/favicon_io/favicon-16x16.png"
+    />
     <link rel="manifest" href="../../assets/favicon_io/site.webmanifest" />
     <link
       href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Open+Sans|Poppins|Quicksand:400,500,600,700|Roboto:400,400i,500&display=swap"
@@ -21,7 +35,11 @@
         <ul>
           <li class="logo">
             <a href="../../index.html">
-              <img class="logo__svg" src="../../assets/RE_Logo.svg" alt="Logo for the site">
+              <img
+                class="logo__svg"
+                src="../../assets/RE_Logo.svg"
+                alt="Logo for the site"
+              />
             </a>
           </li>
           <li class="../../projects">
@@ -46,23 +64,49 @@
         <section class="tracker-input">
           <div class="input-container">
             <h2>INPUT</h2>
+
             <div class="input-group">
+              <div class="input-value-group">
+                <input
+                  type="number"
+                  class="userinput numberinput"
+                  value="Enter amount"
+                  id="input-value-js"
+                  autofocus
+                />
+                <input
+                  type="submit"
+                  class="numbersubmit"
+                  value="Submit"
+                  id="submit-value-js"
+                />
+              </div>
 
-            <div class="input-value-group">
-              <input type="number" class="userinput numberinput" value="Enter amount" id="input-value-js" autofocus>
-              <input type="submit" class="numbersubmit" value="Submit" id="submit-value-js">
-            </div>
+              <div class="radio-input-group">
+                <div class="input-expense-group">
+                  <input
+                    type="radio"
+                    class="userinput"
+                    name="amount"
+                    value="Expense"
+                    id="expense-js"
+                  />
+                  <label for="Expense" class="userinput">Expense</label>
+                </div>
 
-            <div class="input-expense-group">
-              <input type="radio" class="userinput" name="amount" value="Expense" id="expense-js">
-              <label for="Expense" class="userinput">Expense</label>
+                <div class="input-income-group">
+                  <input
+                    type="radio"
+                    class="userinput"
+                    name="amount"
+                    value="Income"
+                    id="income-js"
+                    checked
+                  />
+                  <label for="Income" class="userinput">Income</label>
+                </div>
+              </div>
             </div>
-            
-            <div class="input-income-group">
-              <input type="radio" class="userinput" name="amount" value="Income" id="income-js" checked>
-              <label for="Income" class="userinput">Income</label>
-            </div>
-          </div>
           </div>
         </section>
 
@@ -78,11 +122,10 @@
           </div>
 
           <div class="total-container">
-            <h2>TOTAL</h2>
+            <h2>BALANCE</h2>
             <p id="total-display-js">0$</p>
           </div>
         </section>
-
       </main>
     </div>
     <script src="../../app.js"></script>

@@ -7,12 +7,16 @@
     color: $black-primary-text;
     font-family: 'Poppins', sans-serif;
 
+    @include respond(phone) {
+        margin: 0 4vw;
+    }
+
 
     .input-container {
         @include flexcenter;
         flex-direction: column;
         border: $black-primary-light 2px solid;
-        min-width: 50vw;
+        min-width: 30vw;
         padding: 2rem 0;
 
         .input-group {
@@ -20,6 +24,74 @@
             justify-content: space-around;
             align-items: baseline;
             padding: 0 2rem;
+
+            @include respond(phone) {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .input-value-group {
+                margin-right: 2rem;
+                display: flex;
+                align-items: baseline;
+                input, label {
+                    margin: 0;
+                    padding: .5rem;
+                }
+
+                @include respond(phone) {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 0;
+                }
+            }
+
+            .radio-input-group {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include respond(phone) {
+                    flex-direction: column;
+                }
+            }
+
+            .input-expense-group {
+                margin-right: 2rem;
+                display: flex;
+                align-items: baseline;
+
+                @include respond(phone) {
+                    margin-right: 0;
+                }
+
+                input, label {
+                    margin: 0;
+                    padding: .5rem;
+                }
+
+                @include respond(phone) {
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0;
+                }
+            }
+
+            .input-income-group {
+                display: flex;
+                align-items: baseline;
+                input, label {
+                    margin: 0;
+                    padding: .5rem;
+                }
+
+                @include respond(phone) {
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0;
+                }
+            } 
 
             input {
                 margin: 0 1rem;
@@ -34,12 +106,6 @@
                 border: 2px solid $black-primary-light;
             }
 
-            // .numbersubmit {
-            //     border: 1px solid $black-primary-light;
-            //     padding: 0 5px;
-            //     border-radius: 30%;
-            //     outline: none;
-            // }
         }
 
     }
@@ -63,5 +129,9 @@
         border: $black-primary-light 2px solid;
         min-width: 300px;
         min-height: 200px;
+    }
+
+    div {
+        margin: 1rem;
     }
 }
