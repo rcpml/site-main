@@ -7,14 +7,13 @@
     color: $black-primary-text;
     font-family: 'Poppins', sans-serif;
 
+
     .input-container {
         @include flexcenter;
         flex-direction: column;
         border: $black-primary-light 2px solid;
         min-width: 50vw;
         padding: 2rem 0;
-
-
 
         .input-group {
             display: flex;
@@ -23,14 +22,24 @@
             padding: 0 2rem;
 
             input {
-                // display: block;
                 margin: 0 1rem;
-
+                min-height: 2.5rem;
             }
 
             .userinput {
                 margin: 0 1rem;
             }
+
+            .numberinput {
+                border: 2px solid $black-primary-light;
+            }
+
+            // .numbersubmit {
+            //     border: 1px solid $black-primary-light;
+            //     padding: 0 5px;
+            //     border-radius: 30%;
+            //     outline: none;
+            // }
         }
 
     }
@@ -39,8 +48,14 @@
 .tracker-content {
     color: $black-primary-text;
     font-family: 'Poppins', sans-serif;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+    @include respond(phone) {
+        flex-direction: column;
+    }
+
 
     div {
         @include flexcenter;

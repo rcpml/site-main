@@ -28,7 +28,7 @@
             <a href="../../projects.html">PROJECTS</a>
           </li>
           <li class="blog">
-            <a href="#">BLOG</a>
+            <a href="../../posts.html">BLOG</a>
           </li>
           <li class="contact">
             <a href="../../contact.html">CONTACT</a>
@@ -47,12 +47,21 @@
           <div class="input-container">
             <h2>INPUT</h2>
             <div class="input-group">
-            <input type="number" class="userinput" value="Enter amount" id="input-value-js">
-            <input type="submit" value="Submit" id="submit-value-js">
-            <input type="radio" class="userinput" name="amount" value="Expense" id="expense-js">
-            <label for="Expense" class="userinput">Expense</label>
-            <input type="radio" class="userinput" name="amount" value="Income" id="income-js" checked>
-            <label for="Income" class="userinput">Income</label>
+
+            <div class="input-value-group">
+              <input type="number" class="userinput numberinput" value="Enter amount" id="input-value-js" autofocus>
+              <input type="submit" class="numbersubmit" value="Submit" id="submit-value-js">
+            </div>
+
+            <div class="input-expense-group">
+              <input type="radio" class="userinput" name="amount" value="Expense" id="expense-js">
+              <label for="Expense" class="userinput">Expense</label>
+            </div>
+            
+            <div class="input-income-group">
+              <input type="radio" class="userinput" name="amount" value="Income" id="income-js" checked>
+              <label for="Income" class="userinput">Income</label>
+            </div>
           </div>
           </div>
         </section>

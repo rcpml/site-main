@@ -347,19 +347,36 @@ nav ul li a:link:visited:hover {
 
 .tracker-input .input-container .input-group input {
   margin: 0 1rem;
+  min-height: 2.5rem;
 }
 
 .tracker-input .input-container .input-group .userinput {
   margin: 0 1rem;
 }
 
+.tracker-input .input-container .input-group .numberinput {
+  border: 2px solid #534e50;
+}
+
 .tracker-content {
   color: #292929;
   font-family: 'Poppins', sans-serif;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  .tracker-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .tracker-content div {
