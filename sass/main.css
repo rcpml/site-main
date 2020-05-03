@@ -60,11 +60,6 @@ body {
 @media (max-width: 600px) {
   .jumbotron {
     font-size: 3.662rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .jumbotron {
     padding: 1rem 5vw;
   }
 }
@@ -211,7 +206,7 @@ nav ul li a:link:visited:hover {
 
 @media (max-width: 600px) {
   .container main .first-content {
-    padding: 4rem;
+    padding: 2rem;
   }
 }
 

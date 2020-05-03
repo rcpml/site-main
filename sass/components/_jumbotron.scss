@@ -15,11 +15,9 @@
 
     @include respond(phone) {
         font-size: 3.662rem;
-      }
-
-    @include respond(phone) {
         padding: 1rem 5vw;
-    }
+
+      }
 
     &__text {
         @include flexcenter;
