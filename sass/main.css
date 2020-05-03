@@ -20,11 +20,9 @@ body {
 }
 
 .button {
-  border-radius: 2rem;
-  font-size: 2rem;
-  width: 15rem;
-  height: 4rem;
-  background-color: #C5E7E2;
+  border-radius: .5rem;
+  font-size: 1.6rem;
+  padding: .4rem .5rem;
 }
 
 .button a,
@@ -32,17 +30,11 @@ body {
 .button a:active,
 .button a:visited {
   text-decoration: none;
-  color: #404040;
+  color: black;
 }
 
 .button:focus {
   outline: none;
-}
-
-.button__posts {
-  background-color: #F5BB00;
-  color: #404040;
-  font-size: 1.8rem;
 }
 
 .jumbotron {
@@ -61,7 +53,7 @@ body {
   line-height: 1.5;
   font-family: 'Lato', sans-serif;
   font-size: 4.883rem;
-  background-color: #C5E7E2;
+  background-color: #457B9D;
   border-radius: 1rem;
 }
 
@@ -91,7 +83,7 @@ body {
   width: 100%;
   height: 20rem;
   font-family: 'Poppins', sans-serif;
-  background-color: #49A078;
+  background-color: #1D3557;
   color: white;
   border-radius: 1rem;
 }
