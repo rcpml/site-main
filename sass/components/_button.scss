@@ -1,5 +1,5 @@
 .button {
-    border-radius: .5rem;
+    border-radius: .4rem;
     font-size: 1.6rem;
     padding: .4rem .5rem;
 
@@ -10,10 +10,18 @@
     a:active,
     a:visited {
         text-decoration: none;
+        font-weight: 300;
         color: black;
+
+        &:hover {
+            color: $red-primary-dark;
+        }
+
     }
 
     &:focus {
         outline: none;
     }
+
+
 }

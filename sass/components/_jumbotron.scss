@@ -10,7 +10,7 @@
     font-size: 4.883rem;
 
     // background-color: #C5E7E2;
-    background-color: #457B9D;
+    // background-color: #457B9D;
     border-radius: 1rem;
 
     @include respond(phone) {
@@ -27,9 +27,8 @@
 
         font-family: 'Poppins', sans-serif;
 
-        // background-color: #E55934;
-        // background-color: #49A078;
         background-color: #1D3557;
+        background-color: $red-primary-dark;
         color: white;
         border-radius: 1rem;
 
