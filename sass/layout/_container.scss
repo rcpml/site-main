@@ -15,7 +15,7 @@
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         }
 
-        .first-content {
+        .main-content {
             @include flexcenter;
             display: flex;
             padding: 8rem;
@@ -24,6 +24,13 @@
             text-align: center;
             box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
             font-weight: 300;
+
+            a,
+            a:link,
+            a:visited,
+            a:active {
+                text-decoration: none;
+            }
 
             @include respond(phone) {
                 padding: 2rem;
@@ -46,6 +53,10 @@
                 font-family: 'Lato', sans-serif;
                 font-size: 3.906rem;
                 color: #404040;
+
+                &:hover {
+                    color: $blue-primary-dark;
+                }
 
                 @include respond(phone) {
                     font-size: 2.93rem;
