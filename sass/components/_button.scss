@@ -2,8 +2,14 @@
     border-radius: .4rem;
     font-size: 1.6rem;
     padding: .4rem .5rem;
+    background-color: $red-primary;
+    color: white;
+    border: none;
+    transition: all .3s;
 
-    // background-color: #E8E288;
+    &:hover {
+        background-color: $green-primary-dark;
+    }
 
     a,
     a:link,
@@ -11,12 +17,7 @@
     a:visited {
         text-decoration: none;
         font-weight: 300;
-        color: black;
-
-        &:hover {
-            color: $red-primary-dark;
-        }
-
+        color: white;
     }
 
     &:focus {
