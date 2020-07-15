@@ -93,6 +93,29 @@ body {
   border-radius: 1rem;
 }
 
+.jumbotron__text--blink_caret {
+  -webkit-animation: blink-caret 1.2s step-end infinite;
+          animation: blink-caret 1.2s step-end infinite;
+}
+
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
 nav {
   font-family: "Lato", sans-serif;
   font-size: 2rem;
@@ -142,6 +165,10 @@ nav ul li {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
+}
+
+nav ul li .active_page {
+  color: #EF233C;
 }
 
 nav ul li:not(:last-child) {
