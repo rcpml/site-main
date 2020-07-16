@@ -15,6 +15,24 @@
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         }
 
+        .picture-container {
+            // box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
+            margin: 2rem 0;
+            padding: 1rem;
+            picture {
+                img {
+                    width: 50%;
+                }
+            }
+
+            .picture-description {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.3rem;
+            }
+        }
+
         .main-content {
             @include flexcenter;
             display: flex;
@@ -41,6 +59,7 @@
                 font-family: 'Lato', sans-serif;
                 font-size: 4.883rem;
                 color: #404040;
+                line-height: 1.2;
 
                 @include respond(phone) {
                     font-size: 3.662rem;
@@ -95,6 +114,10 @@
 
             p:not(:last-child) {
                 padding: 1rem 0;
+            };
+
+            p:last-child {
+                margin: .5rem;
             }
 
         }
