@@ -370,6 +370,7 @@ nav ul li a:link:visited:hover {
 
 @media (max-width: 600px) {
   #post-content {
+    padding: 1rem;
     margin: 0;
     -webkit-box-shadow: none;
             box-shadow: none;
