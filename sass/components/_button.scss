@@ -1,14 +1,14 @@
 .button {
     border-radius: .4rem;
-    font-size: 1.6rem;
-    padding: .4rem .5rem;
+    font-size: 1.8rem;
+    padding: .6rem .7rem;
     background-color: $red-primary;
     color: white;
     border: none;
     transition: all .3s;
 
     &:hover {
-        background-color: $green-primary-dark;
+        background-color: $blue-primary-dark;
     }
 
     a,
@@ -24,5 +24,8 @@
         outline: none;
     }
 
+}
 
+.button-back {
+    margin-top: 1rem;
 }

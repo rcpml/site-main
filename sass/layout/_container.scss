@@ -16,7 +16,6 @@
         }
 
         .picture-container {
-            // box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
             margin: 2rem 0;
             padding: 1rem;
             picture {
@@ -42,6 +41,7 @@
             text-align: center;
             box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
             font-weight: 300;
+            font-size: 2rem;
 
             a,
             a:link,
@@ -51,7 +51,9 @@
             }
 
             @include respond(phone) {
-                padding: 2rem;
+                padding: 1rem;
+                margin: 0;
+                box-shadow: none;
             }
 
 

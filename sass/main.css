@@ -21,8 +21,8 @@ body {
 
 .button {
   border-radius: .4rem;
-  font-size: 1.6rem;
-  padding: .4rem .5rem;
+  font-size: 1.8rem;
+  padding: .6rem .7rem;
   background-color: #FF6961;
   color: white;
   border: none;
@@ -31,7 +31,7 @@ body {
 }
 
 .button:hover {
-  background-color: #43AB49;
+  background-color: #0085A8;
 }
 
 .button a,
@@ -45,6 +45,10 @@ body {
 
 .button:focus {
   outline: none;
+}
+
+.button-back {
+  margin-top: 1rem;
 }
 
 .jumbotron {
@@ -262,6 +266,7 @@ nav ul li a:link:visited:hover {
   -webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
   font-weight: 300;
+  font-size: 2rem;
 }
 
 .container main .main-content a,
@@ -273,7 +278,10 @@ nav ul li a:link:visited:hover {
 
 @media (max-width: 600px) {
   .container main .main-content {
-    padding: 2rem;
+    padding: 1rem;
+    margin: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 
