@@ -278,10 +278,7 @@ nav ul li a:link:visited:hover {
 
 @media (max-width: 600px) {
   .container main .main-content {
-    padding: 1rem;
-    margin: 0;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    padding: 2rem;
   }
 }
 
@@ -369,5 +366,13 @@ nav ul li a:link:visited:hover {
 #contact h3 a:link:hover,
 #contact h3 a:visited:hover {
   color: #0085A8;
+}
+
+@media (max-width: 600px) {
+  #post-content {
+    margin: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
