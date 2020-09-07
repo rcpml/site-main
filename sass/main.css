@@ -351,9 +351,15 @@ nav ul li a:link:visited:hover {
   margin: .5rem;
 }
 
-#email h3 a,
-#email h3 a:link,
-#email h3 a:visited {
+#contact h3 a,
+#contact h3 a:link,
+#contact h3 a:visited {
   color: #E3504B;
+}
+
+#contact h3 a:hover,
+#contact h3 a:link:hover,
+#contact h3 a:visited:hover {
+  color: #0085A8;
 }
 /*# sourceMappingURL=main.css.map */

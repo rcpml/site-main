@@ -1,10 +1,14 @@
-#email {
+#contact {
     h3 {
         a,
         a:link,
         a:visited {
 
             color: $red-primary-dark;
+
+            &:hover {
+                color: $blue-primary-dark;
+            }
         }
     }
 }
