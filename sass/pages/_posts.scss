@@ -1,7 +1,11 @@
 #post-content {
     @include respond(phone) {
-        padding: 1rem;
+        padding: .5rem;
         margin: 0;
         box-shadow: none;
+
+        div {
+            font-weight: 400
+        }
     }
 }
