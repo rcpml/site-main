@@ -220,6 +220,8 @@ nav ul li a:link:visited:hover {
   border-radius: .6rem;
   padding: .5rem 0;
   font-size: 1.5rem;
+  -webkit-transition: all ease-in-out .2s;
+  transition: all ease-in-out .2s;
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
