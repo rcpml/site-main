@@ -32,6 +32,14 @@ body {
 
 .button:hover {
   background-color: #0085A8;
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .button a,
@@ -95,11 +103,6 @@ body {
   background-color: #E3504B;
   color: white;
   border-radius: 1rem;
-}
-
-.jumbotron__text--blink_caret {
-  -webkit-animation: blink-caret 1.2s step-end infinite;
-          animation: blink-caret 1.2s step-end infinite;
 }
 
 /* The typewriter cursor effect */
@@ -198,6 +201,35 @@ nav ul li a:link:hover,
 nav ul li a:visited:hover,
 nav ul li a:link:visited:hover {
   color: #EF233C;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  -webkit-transition: all ease-in-out .15s;
+  transition: all ease-in-out .15s;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 12rem;
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  border-radius: .6rem;
+  padding: .5rem 0;
+  font-size: 1.5rem;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 75%;
+  left: 50%;
+  margin-left: -6rem;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
 }
 
 .container {
@@ -377,6 +409,40 @@ nav ul li a:link:visited:hover {
   }
   #post-content div {
     font-weight: 400;
+  }
+}
+
+.button-tool {
+  margin: 1.5rem;
+}
+
+.result-area {
+  font-size: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 10rem;
+  min-width: 40rem;
+  -webkit-transition: all ease-in-out .2s;
+  transition: all ease-in-out .2s;
+}
+
+.result-area:hover {
+  cursor: pointer;
+  color: #02b8d8;
+}
+
+@media (max-width: 600px) {
+  .result-area {
+    font-size: 2.5rem;
+    min-height: 5rem;
+    min-width: 20rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

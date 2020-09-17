@@ -29,12 +29,6 @@
         background-color: $red-primary-dark;
         color: white;
         border-radius: 1rem;
-
-        &--blink_caret {
-            // border-right: .15em solid black;
-            animation: blink-caret 1.2s step-end infinite;
-        }
-
     }
 }
 

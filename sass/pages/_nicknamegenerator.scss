@@ -1,0 +1,32 @@
+.button-tool {
+    margin: 1.5rem;
+}
+
+.result-area {
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10rem;
+    min-width: 40rem;
+    transition: all ease-in-out .2s;
+
+    &:hover {
+        cursor: pointer;
+        color: $blue-primary;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+        min-height: 5rem;
+        min-width: 20rem;
+    }
+}
+
+.adjective-area {
+
+}
+
+.noun-area {
+
+}
