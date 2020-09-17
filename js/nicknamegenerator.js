@@ -1,8 +1,18 @@
 "use strict";
+
 let adjectives = ["Mysterious","Fluffy","Angry","Vengeful","Hyperactive","Playful","Seismic", 
-"Furious","Mad","Jumpy"];
+"Furious","Mad","Jumpy","Genious","Adventurer","Sparkling","Nocturnal","Aquatic","Jittery",
+"Cagey","Capricious","Divergent","Erratic","Heuristic","Evasive","Solar","Tenacious","Zealous",
+"Agreeable","Charming","Bright","Versatile","Loyal","Chatty","Witty","Laid-back","Persistent",
+"Fearless","Artistic","Nefarious","Speedy","Restless","Icy","Devious","Slippery","Deceptive",
+"Foxy","Shifty","Shady","Thrilled","Chirpy","Carefree","Jolly","Crafty","Daring","Agile","Sleepy"];
+
 let nouns = ["Eagle","UFO","Wizard","Shark","Turtle","Knight","Dragon","Philosopher","Scarecrow",
-"Boxer","Champ","Kid","Mechanic","Executer"];
+"Boxer","Champ","Hitchhiker","Mechanic","Executer","Astronaut","Soda","Swordmaster","Librarian",
+"Sensei","Vampire","Plumber","Baker","Fisher","Gardener","Protagonist","Antagonist","Star","Planet",
+"Dragon","Frog","Tiger","Hacker","Keeper","Racer","Rider","Reporter","Traveler","Professor","Chef",
+"Pilot","Commander","Painter","Cook","Catcher","Diver","Ranger","Astronomer","Oracle","Cleaner",
+"Rocket","Scientist","Magician","Zookeper","Brewmaster","Detective","Shopper","Chocolatier","Gamer"];
 
 const resultArea = document.getElementById("js-resultarea");
 const adjectiveArea = document.getElementById("js-adjectivearea");
