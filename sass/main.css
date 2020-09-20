@@ -108,9 +108,7 @@ body {
   width: 100%;
   height: 20rem;
   font-family: 'Poppins', sans-serif;
-  background-color: #1D3557;
-  background-color: #E3504B;
-  color: white;
+  border: .2rem black solid;
   border-radius: 1rem;
 }
 
