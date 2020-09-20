@@ -19,10 +19,10 @@
     }
 }
 
-.adjective-area {
-
-}
-
-.noun-area {
-
+@media (prefers-color-scheme:dark) {
+    .result-area {
+        &:hover {
+            color: whitesmoke;
+        }
+    }
 }

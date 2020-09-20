@@ -19,6 +19,13 @@ body {
           box-sizing: border-box;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+}
+
 .button {
   border-radius: .4rem;
   font-size: 1.8rem;
@@ -68,6 +75,36 @@ body {
   background-color: #43AB49;
 }
 
+@media (prefers-color-scheme: dark) {
+  .button {
+    background-color: black;
+    color: white;
+    border: .1rem whitesmoke dashed;
+  }
+  .button:hover {
+    background-color: black;
+  }
+  .button a,
+  .button a:link,
+  .button a:active,
+  .button a:visited {
+    color: white;
+  }
+  .button:focus {
+    outline: none;
+  }
+  .button-back {
+    margin-top: 1rem;
+  }
+  .button-tool {
+    margin: 1rem;
+    min-width: 20rem;
+  }
+  .button-tool__answer {
+    background-color: #43AB49;
+  }
+}
+
 .jumbotron {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,21 +149,9 @@ body {
   border-radius: 1rem;
 }
 
-/* The typewriter cursor effect */
-@-webkit-keyframes blink-caret {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: white;
-  }
-}
-@keyframes blink-caret {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: white;
+@media (prefers-color-scheme: dark) {
+  .jumbotron {
+    border: .3rem white solid;
   }
 }
 
@@ -208,6 +233,25 @@ nav ul li a:link:hover,
 nav ul li a:visited:hover,
 nav ul li a:link:visited:hover {
   color: #EF233C;
+}
+
+@media (prefers-color-scheme: dark) {
+  nav ul li .active_page {
+    color: whitesmoke;
+  }
+  nav ul li a,
+  nav ul li a:link,
+  nav ul li a:visited,
+  nav ul li a:link:visited {
+    text-decoration: none;
+    color: white;
+  }
+  nav ul li a:hover,
+  nav ul li a:link:hover,
+  nav ul li a:visited:hover,
+  nav ul li a:link:visited:hover {
+    color: #02b8d8;
+  }
 }
 
 .snackbar {
@@ -467,6 +511,34 @@ nav ul li a:link:visited:hover {
   margin: .5rem;
 }
 
+@media (prefers-color-scheme: dark) {
+  .container {
+    background-color: black;
+    color: white;
+  }
+  .container main .main-content {
+    border: .3rem white solid;
+  }
+  .container main .main-content h2 {
+    color: white;
+  }
+  .container main .main-content h3 {
+    color: white;
+  }
+  .container main .main-content h3:hover {
+    color: whitesmoke;
+  }
+  .container main .main-content h4 {
+    color: whitesmoke;
+  }
+  .container main .main-content h5 {
+    color: whitesmoke;
+  }
+  .container main .main-content p {
+    color: whitesmoke;
+  }
+}
+
 #contact h3 a,
 #contact h3 a:link,
 #contact h3 a:visited {
@@ -477,6 +549,14 @@ nav ul li a:link:visited:hover {
 #contact h3 a:link:hover,
 #contact h3 a:visited:hover {
   color: #0085A8;
+}
+
+@media (prefers-color-scheme: dark) {
+  #contact h3 a,
+  #contact h3 a:link,
+  #contact h3 a:visited {
+    color: whitesmoke;
+  }
 }
 
 .result-area {
@@ -506,6 +586,12 @@ nav ul li a:link:visited:hover {
     font-size: 2.5rem;
     min-height: 5rem;
     min-width: 20rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .result-area:hover {
+    color: whitesmoke;
   }
 }
 

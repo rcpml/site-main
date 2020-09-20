@@ -31,8 +31,8 @@
     }
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-    from, to { color: transparent }
-    50% { color: white }
+@media (prefers-color-scheme: dark) {
+  .jumbotron {
+    border: .3rem white solid;
   }
+}

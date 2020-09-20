@@ -57,3 +57,25 @@ nav {
         }
     }
 }
+
+@media (prefers-color-scheme:dark) {
+    nav {
+        ul {
+            li {
+                .active_page {
+                    color: whitesmoke;
+                }    
+                a,
+                a:link,
+                a:visited,
+                a:link:visited {
+                    text-decoration: none;
+                    color: white;
+                    &:hover {
+                        color: $blue-primary;
+                    }
+                }
+            }
+        }
+    }  
+}

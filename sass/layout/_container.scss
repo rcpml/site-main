@@ -18,6 +18,7 @@
         .picture-container {
             margin: 2rem 0;
             padding: 1rem;
+
             picture {
                 img {
                     width: 50%;
@@ -114,12 +115,58 @@
 
             p:not(:last-child) {
                 padding: 1rem 0;
-            };
+            }
+
+            ;
 
             p:last-child {
                 margin: .5rem;
             }
 
+        }
+    }
+}
+
+
+@media (prefers-color-scheme:dark) {
+   
+    .container {
+        
+        background-color: black;
+        color: white;
+
+        main {
+
+            .main-content {
+                border: .3rem white solid;
+                h2 {
+                    color: white;
+                }
+    
+                h3 {
+                    color: white;
+
+                    &:hover {
+                        color: whitesmoke;
+                    }
+
+                }
+    
+                h4 {
+                    color: whitesmoke;
+                }
+    
+                h5 {
+
+                    color: whitesmoke;
+    
+                }
+    
+                p {
+                    color: whitesmoke;
+                }
+
+            }
         }
     }
 }
