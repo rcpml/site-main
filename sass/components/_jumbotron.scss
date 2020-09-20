@@ -14,20 +14,21 @@
     @include respond(phone) {
         font-size: 3.662rem;
         padding: 1rem 5vw;
-
+        margin: 1vh 0;
       }
 
     &__text {
         @include flexcenter;
         padding: 0 3vh;
         width: 100%;
-        height: 20rem;
+        min-height: 20rem;
         font-family: 'Poppins', sans-serif;
-        // background-color: #1D3557;
-        // background-color: $red-primary-dark;
-        // color: white;
         border: .2rem black solid;
         border-radius: 1rem;
+
+        @include respond(phone) {
+          min-height: 10rem;
+        }
     }
 }
 
