@@ -6,10 +6,12 @@
 @import 'components/button';
 @import 'components/jumbotron';
 @import 'components/navigation';
+@import 'components/snackbar';
 @import 'components/tooltip';
 
 
 @import 'layout/container';
 @import 'pages/contact';
-@import 'pages/posts';
+@import 'pages/guesswithemojis';
 @import 'pages/nicknamegenerator';
+@import 'pages/posts';

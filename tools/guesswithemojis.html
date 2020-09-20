@@ -27,14 +27,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../sass/main.css" />
-    <title>GUESS WITH EMOJIS</title>
+    <script src="../js/twemoji.min.js"></script>
+    <title>Guess with Emojis</title>
   </head>
   <body>
     <div class="container">
       <nav class="navbar">
         <ul>
           <li class="logo">
-            <a href="#">
+            <a href="../index.html">
               RCPML
             </a>
           </li>
@@ -50,15 +51,34 @@
         </ul>
       </nav>
 
-      <div class="jumbotron">
-        <p class="jumbotron__text">
-          TIME TO GUESS IT!
-        </p>
-      </div>
-
       <main>
+        <div class="main-content">
+          <h2>GUESS WITH EMOJIS!</h2>
+
+            
+            <div class="result-area" id="js-resultarea">
+
+              <span id="js-emojiholder">HERE</span>
+
+            </div>
+         
+          
+          <button class="button button-tool" id="js-getemojis">Get it</button>
+          <button class="button button-tool button-tool__answer" id="js-getemojisanswer">See the answer</button>
+
+
+          <p>CHOOSE YOUR MODE BELOW </p>
+
+          <div class="modeholder">
+            <!-- TODO: movies, tv-series, proverbs -->
+          </div>
+        </div>
+        <div class="snackbar" id="js-snackbar-emojis">Please get your question first!</div>
 
       </main>
     </div>
-    <script src="../app.js"></script>
+    <script src="../js/guesswithemojis.js"></script>
+    <script>
+      twemoji.parse(document.body);
+  </script>
   </body>
