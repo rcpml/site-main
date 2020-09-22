@@ -498,12 +498,6 @@ nav ul li a:link:visited:hover {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .result-area:hover {
-    color: whitesmoke;
-  }
-}
-
 @media (max-width: 600px) {
   #post-content {
     padding: .5rem;
