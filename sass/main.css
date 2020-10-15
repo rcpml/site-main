@@ -199,6 +199,22 @@ nav ul li a:link:visited:hover {
   color: #EF233C;
 }
 
+.searchbar {
+  min-width: 90%;
+  min-height: 6vh;
+  border-radius: 1rem;
+  outline: none;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+  .searchbar {
+    font-size: 1rem;
+    min-height: 2vh;
+  }
+}
+
 .snackbar {
   visibility: hidden;
   min-width: 35rem;
@@ -466,6 +482,47 @@ nav ul li a:link:visited:hover {
 #contact h3 a:link:hover,
 #contact h3 a:visited:hover {
   color: #0085A8;
+}
+
+#edtechtoolscontainer {
+  padding: 1rem;
+}
+
+#edtechtoolscontent {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0rem;
+}
+
+.tool-table {
+  margin: 1rem;
+}
+
+.tool-table tr:hover {
+  background-color: #02b8d8;
+  color: white;
+}
+
+.tool-table tr th {
+  width: 30vw;
+}
+
+.tool-table tr a,
+.tool-table tr a:link,
+.tool-table tr a:visited {
+  color: #ff6337;
+}
+
+.tool-table tr a:hover,
+.tool-table tr a:link:hover,
+.tool-table tr a:visited:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .tool-table {
+    font-size: 1.5rem;
+  }
 }
 
 .result-area {

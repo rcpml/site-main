@@ -1,0 +1,15 @@
+.searchbar {
+    min-width: 90%;
+    min-height: 6vh;
+    border-radius: 1rem;
+    outline: none;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+@include respond(phone) {
+    .searchbar {
+        font-size: 1rem;
+        min-height: 2vh;
+    }
+}

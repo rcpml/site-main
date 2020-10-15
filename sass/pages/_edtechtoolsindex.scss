@@ -1,0 +1,39 @@
+#edtechtoolscontainer {
+    padding: 1rem;  
+}
+
+#edtechtoolscontent {
+    box-shadow: none;
+    padding: 0rem;
+}
+
+.tool-table {
+    margin: 1rem;
+    tr {
+
+        &:hover {
+            background-color: $blue-primary;
+            color: white;
+        }
+
+        th {
+            width: 30vw;
+            // border: .2rem black solid;
+        }
+
+        a,
+        a:link,
+        a:visited {
+            color: $orange-primary;
+            &:hover {
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+@include respond(phone) {
+    .tool-table {
+        font-size: 1.5rem;
+    }
+}
