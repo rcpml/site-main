@@ -97,8 +97,23 @@
         {
             question: "&#x1F6F0; &#x1F916; &#x2764; &#x1F916; &#x1F331 &#x1F30E;",
             answer: "Wall-E",
+        },
+        {
+            question: "&#x1F422; &#x1F400;	&#x1F94B; &#x1F355;",
+            answer: "Teenage Mutant Ninja Turtles"
         }
     ];
+
+    let emojiSeriesList = [
+        {
+            question: "",
+            answer: "Queen's Gambit"
+        },
+        {
+            question: "",
+            answer: ""
+        }
+    ]
 
 
     const emojiHolder = document.getElementById("js-emojiholder");
