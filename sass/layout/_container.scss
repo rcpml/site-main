@@ -1,6 +1,7 @@
 .container {
-    padding: 2rem;
 
+    padding: 2rem;
+    
     main {
         padding: 1rem 10vw;
         font-size: 1.8rem;
@@ -111,7 +112,7 @@
 
             p {
                 color: #2C2C2C;
-                text-align: left;
+                text-align: center;
                 word-wrap: wrap;
 
                 @include respond(phone) {
@@ -123,56 +124,10 @@
                 padding: 1rem 0;
             }
 
-            ;
 
             p:last-child {
                 margin: .5rem;
             }
-
         }
     }
 }
-
-
-// @media (prefers-color-scheme:dark) {
-   
-//     .container {
-        
-//         background-color: black;
-//         color: white;
-
-//         main {
-
-//             .main-content {
-//                 border: .3rem white solid;
-//                 h2 {
-//                     color: white;
-//                 }
-    
-//                 h3 {
-//                     color: white;
-
-//                     &:hover {
-//                         color: whitesmoke;
-//                     }
-
-//                 }
-    
-//                 h4 {
-//                     color: whitesmoke;
-//                 }
-    
-//                 h5 {
-
-//                     color: whitesmoke;
-    
-//                 }
-    
-//                 p {
-//                     color: whitesmoke;
-//                 }
-
-//             }
-//         }
-//     }
-// }
