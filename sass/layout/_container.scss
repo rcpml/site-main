@@ -40,12 +40,15 @@
             margin: 1vh;
             flex-direction: column;
             text-align: center;
-            box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
             box-shadow: 5px 10px;
             font-weight: 300;
             font-size: 2rem;
             border-radius: 1rem;
             border: 1rem solid $black-primary;
+
+            @include respond(phone) {
+                border: .1rem solid $black-primary;
+            }
 
             a,
             a:link,

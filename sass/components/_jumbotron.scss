@@ -11,6 +11,8 @@
     // background-color: #457B9D;
     border-radius: 1rem;
 
+    
+
     @include respond(phone) {
         font-size: 3.662rem;
         padding: 1rem 5vw;
@@ -25,6 +27,8 @@
         font-family: 'Poppins', sans-serif;
         border: .2rem black solid;
         border-radius: 1rem;
+
+        
 
         @include respond(phone) {
           min-height: 10rem;

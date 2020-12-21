@@ -379,14 +379,18 @@ nav ul li a:link:visited:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  -webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 5px 10px;
           box-shadow: 5px 10px;
   font-weight: 300;
   font-size: 2rem;
   border-radius: 1rem;
   border: 1rem solid #121212;
+}
+
+@media (max-width: 600px) {
+  .container main .main-content {
+    border: 0.1rem solid #121212;
+  }
 }
 
 .container main .main-content a,
