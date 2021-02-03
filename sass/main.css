@@ -462,7 +462,7 @@ nav ul li a:link:visited:hover {
 
 .container main .main-content p {
   color: #2C2C2C;
-  text-align: center;
+  text-align: left;
   word-wrap: wrap;
 }
 
